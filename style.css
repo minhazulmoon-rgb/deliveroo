@@ -1,0 +1,298 @@
+/* CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAVIGATION BAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    
+}
+
+
+/* NAVIGATION BAR : LOGO AND IMAGE */
+#logo{
+/* margin: 14px; */
+float: left;
+margin-top: 40px;
+}
+#logo img{
+height:218px;
+margin: -37px -62px;
+}
+
+
+
+/* NAVOGATION BAR : LISTS STYLING */
+#navbar{
+    position: absolute;
+    top: 0;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{ 
+  display: block;
+  padding: 6px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: aliceblue;
+}
+#navbar ul li a:hover{ 
+  
+  color: grey;
+  background-color: gainsboro;
+  
+}
+#db{
+    padding: 5px;
+    margin: 15px;
+    background-color: grey;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+     cursor: pointer;
+     border: 3px solid white;
+     color: white;
+}
+#db:hover{
+    background-color: green;
+}
+
+
+ /* .n {
+    float: right;
+    padding: 10px;
+    width: 100px;
+} */
+
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 250px;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+#home::before{
+    content: "";
+    /* background :url('freshly-cut-meat_24972-893.jpg') no-repeat center center/cover; */
+  /* background :url('https://image.freepik.com/free-photo/empty-black-plate-silverware-dark-stone-backgroun-top-view_107389-1575.jpg') no-repeat center center/cover;  */
+   background :url('https://img.freepik.com/free-photo/top-view-pad-thai-stir-fly-thai-noodle-with-shrimp-egg-black-ceramic-plate-black-table_67155-5713.jpg?size=626&ext=jpg&ga=GA1.2.1109478733.1598563645') no-repeat center center/cover;  
+     
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+    top: 0px;
+    left: 0px;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#home p{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* UTILITY CLASSES*/
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 15px;
+}
+.btn{
+    padding: 6px 20px;
+      border: 3px solid white; 
+    background-color: grey;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 45px;    
+     cursor: pointer;
+     color: white;
+}
+
+.btn:hover{
+    background-color: green;
+}
+ .center{
+    text-align: center;
+
+ }
+    
+
+
+/* SERVICES SECTION */
+
+.services-container{
+   /* background: url("https://images.unsplash.com/photo-1519692548406-72146873010c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"); */
+   /* background: url("https://images.unsplash.com/uploads/1412198485051133af17f/5049dacb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover ; */
+   background: url("https://image.freepik.com/free-vector/cafe-restaurant-terrace-night_107791-3270.jpg") no-repeat center center/cover ;
+}
+#services{
+    margin: 44px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid green;
+    margin: 40px;
+    border-radius: 20px;
+    background: cadetblue;
+    padding: 34px;
+    
+}
+#services .box img{
+    height: 250px;
+    display: block;
+    margin: auto;
+
+}
+/* #services{}
+#services{}
+#services{} */
+
+
+/* PARTNERS SECTION */
+#client-section{
+   background: chocolate; 
+height: 144px;
+
+/* padding: 5px; */
+}
+#clients{
+     display: flex; 
+   
+    justify-content: center;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+}
+#clients img{
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    /* background: pink; */
+    
+}
+.client-item{
+    padding: 49px;
+    margin: 25px;
+   
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+     width: 100%; 
+     height: 100%; 
+}
+
+#c{
+    border:3px solid whitesmoke;
+}
+
+
+
+
+/* CONTACT SECTION */
+#contact{
+
+    position: relative;
+}
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+ }
+
+ footer{
+     background: black ;
+     color: white;
+     padding: 9px 20px;
+ }
+
+ #contact-box input,
+ #contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 15px;
+     font-size: 1.2rem;
+     
+ }
+
+ #contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 34px;
+     
+ }
+ #contact-box form{
+     width: 40%;
+    
+ }
+ 
+ #contact-box label{
+     font-size: 1.3rem;
+    
+ }
+ .form-group{
+     padding: 10px;
+     margin: 20px;
+ }
+   
+
+ #btc{
+    padding: 10px 15px;
+    border: 3px solid white; 
+  background-color: grey;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px 15px;    
+   cursor: pointer;
+   color: white;
+ }
+
+ #btc:hover{
+    background-color: green;
+ }
